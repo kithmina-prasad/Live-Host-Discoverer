@@ -58,6 +58,18 @@ crontab -e
 * * * * * /path/to/discover.sh
 ```
 
+![Screenshot (380)](https://github.com/user-attachments/assets/bcc5a5e2-7d7a-40f4-8780-834c27f1b7c6)
+
+![Screenshot (381)](https://github.com/user-attachments/assets/5105324f-0861-4adc-8d65-d12948ea9ddc)
+
+![Screenshot (382)](https://github.com/user-attachments/assets/8b9ab4c2-21ec-4e8a-b86a-b79ef26db733)
+
+![Screenshot (384)](https://github.com/user-attachments/assets/5be0dfc6-b7c5-4d45-93b9-f3a9280577fe)
+
+![Screenshot (383)](https://github.com/user-attachments/assets/b378fcbb-58c5-4847-9be0-49b49089aecd)
+
+
+
 ## <div align="center">📁 Project Structure</div>
 
 ```
