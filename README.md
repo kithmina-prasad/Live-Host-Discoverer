@@ -1,2 +1,110 @@
-# Live-Host-Discoverer
-Live-Host-Discoverer, is a CLI (Command-Line Interface) network monitoring script, not a GUI-based tool.
+# <div align="center">📡 Live-Host-Discoverer - Real-Time Network Monitoring Tool</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Security-ED1C24?style=for-the-badge&logo=security&logoColor=white" alt="Security">
+  <img src="https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap">
+</div>
+
+**Live Host Discoverer** is a lightweight and powerful Bash-based tool that detects live hosts on a local network, notifies you instantly about newly connected or disconnected devices via Telegram, and keeps a log of all network activity. Ideal for system admins, home network users, and cybersecurity learners.
+
+## <div align="left">✨ Features
+
+  - Detects all live devices on your subnet using arp-scan
+  - Sends instant Telegram alerts for:
+  - New devices connecting to the network
+  - Known devices going offline
+  - Maintains a log file for historical tracking
+  - Stores known devices in a local file
+  - DNS reverse lookup for hostname info
+  - Cron-job compatible for background monitoring
+
+## <div align="left">🚀 Installation
+
+If you prefer to install dependencies manually:
+
+```bash
+# Clone the repository
+git clone https://github.com/kithminaprasad/LiveHost_Discoverer.git
+cd LiveHost_Discoverer
+
+# Install required packages
+sudo apt install arp-scan curl
+
+# Make scripts executable
+chmod +x discoverer.sh
+
+# Configure the Script
+Edit the INTERFACE, SUBNET, and Telegram BOT_TOKEN and CHAT_ID in the script:
+nano discover.sh
+```
+
+📩 Telegram Integration
+Create a Telegram bot:
+ - Message @BotFather
+ - Create a new bot and get the token
+ - Get your chat ID via @userinfobot
+ - Paste both into this script
+
+```
+# Run Live Host Discoverer
+
+Manual scan:
+sudo ./discoverer.sh
+
+Run every 1 minutes via cron:
+crontab -e
+* * * * * /path/to/discover.sh
+```
+
+## <div align="center">📁 Project Structure</div>
+
+```
+NetScan-Pro/
+├── install.sh              # Dependency installer
+├── network_scan.sh         # Main scanner script
+├── README.md               # This documentation
+├── results/                # Scan logs and results
+└── Web Pages/              # Generated HTML reports
+```
+
+## <div align="left">🔧 Dependencies</div>
+
+| Dependency                                             | Purpose                                                                         |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| **`arp-scan`**                                         | Scans the local network to find live devices via ARP requests                   |
+| **`curl`**                                             | Sends alerts to Telegram using the Bot API                                      |
+| **`nmap`** *(optional)*                                | Perform detailed port scans or OS detection if integrated later                 |
+| **`traceroute`** *(optional)*                          | Analyze network path (useful for advanced debugging)                            |
+| **`figlet`**, **`lolcat`**, **`toilet`**               | Adds aesthetic banners and colorful output for better readability in terminal   |
+| **`nmcli`**, **`iwlist`**, **`iwconfig`** *(optional)* | Provide additional info on wireless interfaces if extended for Wi-Fi monitoring |
+
+install them all at once:
+```
+sudo apt install arp-scan curl nmap traceroute figlet lolcat toilet net-tools wireless-tools network-manager
+```
+
+## <div align="left">⚠️ Ethical Usage Warning</div>
+
+NetScan Pro is designed for legitimate network administration, security assessment, and educational purposes. Always:
+
+- **Obtain proper authorization** before scanning any network
+- **Respect privacy** and data protection regulations
+- **Use responsibly** and follow local laws regarding network scanning
+
+Unauthorized scanning of networks may be illegal and unethical.
+
+## <div align="left">🤝 Contributing</div>
+
+Contributions to NetScan Pro are welcome! If you'd like to help improve this tool:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+<div align="left">
+  <h4>Made with ❤️ for the security community. Stay Secure. Stay Informed. Happy Scanning!</h4>
+</div>
