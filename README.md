@@ -33,11 +33,11 @@ cd LiveHost_Discoverer
 sudo apt install arp-scan curl
 
 # Make scripts executable
-chmod +x discoverer.sh
+chmod +x scanner.sh
 
 # Configure the Script
 Edit the INTERFACE, SUBNET, and Telegram BOT_TOKEN and CHAT_ID in the script:
-nano discover.sh
+nano scanner.sh
 ```
 
 📩 Telegram Integration
@@ -51,12 +51,14 @@ Create a Telegram bot:
 # Run Live Host Discoverer
 
 Manual scan:
-sudo ./discoverer.sh
+sudo ./scanner.sh
 
 Run every 1 minutes via cron:
 crontab -e
-* * * * * /path/to/discover.sh
+* * * * * /path/to/scanner.sh
 ```
+
+## 🖥️ Screenshots
 
 ![Screenshot (380)](https://github.com/user-attachments/assets/bcc5a5e2-7d7a-40f4-8780-834c27f1b7c6)
 
@@ -73,18 +75,14 @@ https://github.com/user-attachments/assets/4604a30a-adcf-42f5-8e95-42b9eca760eb
 
 
 
-
-
-
-## <div align="center">📁 Project Structure</div>
+## <div align="center">📁 File Structure</div>
 
 ```
-NetScan-Pro/
-├── install.sh              # Dependency installer
-├── network_scan.sh         # Main scanner script
-├── README.md               # This documentation
-├── results/                # Scan logs and results
-└── Web Pages/              # Generated HTML reports
+Live-Host-Discoverer/
+├── scanner.sh           # Main scanner script
+├── known_devices.txt    # List of previously discovered devices
+├── netwatch.log         # Log file storing scan results
+└── cron.log             # Log file for scheduled (cron) scan activities
 ```
 
 ## <div align="left">🔧 Dependencies</div>
@@ -96,12 +94,6 @@ NetScan-Pro/
 | **`nmap`** *(optional)*                                | Perform detailed port scans or OS detection if integrated later                 |
 | **`traceroute`** *(optional)*                          | Analyze network path (useful for advanced debugging)                            |
 | **`figlet`**, **`lolcat`**, **`toilet`**               | Adds aesthetic banners and colorful output for better readability in terminal   |
-| **`nmcli`**, **`iwlist`**, **`iwconfig`** *(optional)* | Provide additional info on wireless interfaces if extended for Wi-Fi monitoring |
-
-install them all at once:
-```
-sudo apt install arp-scan curl nmap traceroute figlet lolcat toilet net-tools wireless-tools network-manager
-```
 
 ## <div align="left">⚠️ Ethical Usage Warning</div>
 
