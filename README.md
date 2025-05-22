@@ -91,8 +91,8 @@ Live_Host_Discoverer/
 | ------------------------------------------------------ | ------------------------------------------------------------------------------- |
 | **`arp-scan`**                                         | Scans the local network to find live devices via ARP requests                   |
 | **`curl`**                                             | Sends alerts to Telegram using the Bot API                                      |
-| **`nmap`** *(optional)*                                | Perform detailed port scans or OS detection if integrated later                 |
-| **`traceroute`** *(optional)*                          | Analyze network path (useful for advanced debugging)                            |
+| **`nmap`**                                             | Perform detailed port scans or OS detection if integrated later                 |
+| **`traceroute`**                                       | Analyze network path (useful for advanced debugging)                            |
 | **`figlet`**, **`lolcat`**, **`toilet`**               | Adds aesthetic banners and colorful output for better readability in terminal   |
 
 ## <div align="left">⚠️ Ethical Usage Warning</div>
