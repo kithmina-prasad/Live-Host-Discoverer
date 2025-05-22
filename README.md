@@ -26,8 +26,8 @@ If you prefer to install dependencies manually:
 
 ```bash
 # Clone the repository
-git clone https://github.com/kithminaprasad/LiveHost_Discoverer.git
-cd LiveHost_Discoverer
+git clone https://github.com/kithminaprasad/Live_Host_Discoverer.git
+cd Live_Host_Discoverer
 
 # Install required packages
 sudo apt install arp-scan curl
@@ -75,10 +75,10 @@ https://github.com/user-attachments/assets/4604a30a-adcf-42f5-8e95-42b9eca760eb
 
 
 
-## <div align="center">📁 File Structure</div>
+## <div align="left">📁 File Structure</div>
 
 ```
-Live-Host-Discoverer/
+Live_Host_Discoverer/
 ├── scanner.sh           # Main scanner script
 ├── known_devices.txt    # List of previously discovered devices
 ├── netwatch.log         # Log file storing scan results
