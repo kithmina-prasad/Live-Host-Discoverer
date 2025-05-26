@@ -7,18 +7,18 @@
   <img src="https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap">
 </div>
 
-**Live Host Discoverer** is a lightweight and powerful Bash-based tool that detects live and new hosts on a local network, notifies you instantly about newly connected and Live devices via Telegram, and keeps a log of all network activity. Ideal for system admins, home network users, and cybersecurity learners.
+**Live Host Discoverer** is a lightweight and powerful Bash based script that detects live and new hosts on a local network, notifies you instantly about newly connected and Live devices via Telegram, and keeps a log of all network activity. Ideal for system admins, home network users, and cybersecurity learners.
 
 ## <div align="left">✨ Features
 
   - Detects all live devices on your subnet using arp-scan
-  - New devices connecting to the network
+  - Detects Devices when newly connected to the network
   - Known devices going offline
-  - Maintains a log file for historical tracking
   - Stores known devices in a local file
   - DNS reverse lookup for hostname info
+  - Maintains a log file for historical activities tracking
   - Cron-job compatible for background automation & monitoring
-  - Sends instant Telegram alerts
+  - Sends instant Telegram bot alerts
 
 ## <div align="left">🚀 Installation
 
