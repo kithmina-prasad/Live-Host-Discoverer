@@ -1,4 +1,4 @@
-# <div align="center">📡 Live-Host-Discoverer - Real-Time Network Monitoring Tool</div>
+# <div align="center">📡 Live-Host-Discoverer - Real-Time Network Monitoring </div>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
@@ -7,18 +7,18 @@
   <img src="https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap">
 </div>
 
-**Live Host Discoverer** is a lightweight and powerful Bash-based tool that detects live hosts on a local network, notifies you instantly about newly connected or disconnected devices via Telegram, and keeps a log of all network activity. Ideal for system admins, home network users, and cybersecurity learners.
+**Live Host Discoverer** is a lightweight and powerful Bash-based tool that detects live and new hosts on a local network, notifies you instantly about newly connected and Live devices via Telegram, and keeps a log of all network activity. Ideal for system admins, home network users, and cybersecurity learners.
 
 ## <div align="left">✨ Features
 
   - Detects all live devices on your subnet using arp-scan
-  - Sends instant Telegram alerts for:
   - New devices connecting to the network
   - Known devices going offline
   - Maintains a log file for historical tracking
   - Stores known devices in a local file
   - DNS reverse lookup for hostname info
-  - Cron-job compatible for background monitoring
+  - Cron-job compatible for background automation & monitoring
+  - Sends instant Telegram alerts
 
 ## <div align="left">🚀 Installation
 
@@ -95,19 +95,10 @@ Live_Host_Discoverer/
 | **`traceroute`**                                       | Analyze network path (useful for advanced debugging)                            |
 | **`figlet`**, **`lolcat`**, **`toilet`**               | Adds aesthetic banners and colorful output for better readability in terminal   |
 
-## <div align="left">⚠️ Ethical Usage Warning</div>
-
-NetScan Pro is designed for legitimate network administration, security assessment, and educational purposes. Always:
-
-- **Obtain proper authorization** before scanning any network
-- **Respect privacy** and data protection regulations
-- **Use responsibly** and follow local laws regarding network scanning
-
-Unauthorized scanning of networks may be illegal and unethical.
 
 ## <div align="left">🤝 Contributing</div>
 
-Contributions to NetScan Pro are welcome! If you'd like to help improve this tool:
+Contributions to Live host discoverer are welcome! If you'd like to help improve this tool:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -116,5 +107,5 @@ Contributions to NetScan Pro are welcome! If you'd like to help improve this too
 5. Open a Pull Request
 
 <div align="left">
-  <h4>Made with ❤️ for the security community. Stay Secure. Stay Informed. Happy Scanning!</h4>
+  <h4>Made with ❤️. Stay Secure. Stay Informed. Happy Scanning!</h4>
 </div>
