@@ -1,4 +1,4 @@
-# <div align="center">📡 Live-Host-Discoverer - Real-Time Network Monitoring </div>
+# <div align="center">📡 Live Host Discoverer - Real Time Network Monitoring </div>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
